@@ -1,16 +1,17 @@
-## Project Setup
+## Настройки
 
+### Установка всех зависимостей
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Запустить локально
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Билд проекта
 
 ```sh
 npm run build
