@@ -1,0 +1,61 @@
+body{
+    height: 100vh;
+    background-color: #2B2B2B;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.center{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.btn{
+    position: relative;
+    display: block;
+    border: none;
+    width: fit-content;
+    padding: 0 32px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    line-height: 50px;
+    color: #1F1F1F;
+    background: #F8F8F8;
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    user-select: none;
+}
+.btn::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #4773FC;
+    position: absolute;
+    transition: .15s linear;
+    top: 0;
+    max-width: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto
+}
+.btn:hover::before{
+    max-width: 100%;
+    background: #4773FC;
+    opacity: 1;
+}
+.btn:hover{
+    color: white;
+}
+.contentBtnAnimate{
+    position: relative;
+}
